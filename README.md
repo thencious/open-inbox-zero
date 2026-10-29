@@ -4,7 +4,7 @@
 
 ### Added functionality
 
-- **Quota-aware OpenRouter AI:** a loopback-only gateway with persistent request counters, configurable minute/day limits, UTC-day reset, a full cooldown after each request batch, and a free-model-only mode. With a 1,000-request budget, 100 calls are reserved for new mail and interactive use.
+- **Quota-aware OpenRouter AI:** a loopback-only gateway with persistent request counters, configurable minute/day limits, UTC-day reset, a full cooldown after each request batch, and a free-model-only mode. With a 1,000-request budget, 500 calls are reserved for new mail and interactive use.
 - **Ten emails per bulk classification:** older messages can receive different tags in a single AI call. Decisions are saved before label writes, so a provider retry can reuse them.
 - **Priority for new mail:** independent mailbox polling every five seconds, a persistent work queue, and execution capacity reserved for recent arrivals. AI latency and provider limits still affect completion time.
 - **Combined inbox by default:** returning from Assistant opens All Accounts. Account colors distinguish messages; the combined view uses a neutral dark palette.
